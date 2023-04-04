@@ -17,7 +17,7 @@ Left, Right, Fire 1
 
 This core uses a TMS9900 CPU where the original uses a TMS9980 (8 bit version of same CPU, just does 2 memory reads/writes instead of 1 16 bit read/write). Game speed is controlled using vertical counter, so should still be the same as the original.
 
-Sound effects are all implemented using samples.
+Sound effects are all implemented using samples. (so core needs SDRAM fitted - 32Mb minimum)
 
 Watchdog is not implemented (since it uses a weird watchdog setup, and all my efforts to recreate one with the same timing results in it rebooting constantly)
 
