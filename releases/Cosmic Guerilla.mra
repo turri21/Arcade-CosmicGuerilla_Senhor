@@ -5,7 +5,7 @@
 	<year>1981</year>
 	<manufacturer>Universal</manufacturer>
 	<category>Space</category>
-    <setname>CosmicGuerilla</setname>
+    <setname>cosmicg</setname>
     <rotation>vertical (ccw)</rotation>
 	<rbf>CosmicGuerilla</rbf>
 	<buttons names="Fire,-,Start 1P,Start 2P,Coin,Pause" default="A,Start,Select,R,L"/>
