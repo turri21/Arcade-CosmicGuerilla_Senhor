@@ -2,6 +2,7 @@
 
 By [Mike Coates](https://github.com/macrofpga)  
 Current Version - 1.00 - 04/04/2023
+                  1.01 - 14/06/2023 - Add blue background switch.
 
 ## Description
 
@@ -15,7 +16,7 @@ Left, Right, Fire 1
 
 ## Known differences/problems
 
-This core uses a TMS9900 CPU where the original uses a TMS9980 (8 bit version of same CPU, just does 2 memory reads/writes instead of 1 16 bit read/write). Game speed is controlled using vertical counter, so should still be the same as the original.
+This core uses a TMS9900 CPU where the original uses a TMS9980 (8 bit version of same CPU, just does two byte reads/writes instead of one word read/write). Game speed is controlled using vertical counter, so should still be the same as the original.
 
 Sound effects are all implemented using samples. (so core needs SDRAM fitted - 32Mb minimum)
 
