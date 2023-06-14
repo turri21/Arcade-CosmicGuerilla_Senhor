@@ -222,6 +222,7 @@ localparam CONF_STR = {
 	"OB,Debug display,Off,On;",
 `endif
 	"OC,Monochrome,Off,On;",
+	"OD,Blue Background,Off,On;",
 	"-;",
 	"P1,Pause options;",
 	"P1OL,Pause when OSD is open,On,Off;",
@@ -514,6 +515,7 @@ COSMIC COSMIC
 	.O_VCOUNT(VCount),
 	.O_HCOUNT(HCount),
 	.I_MONO(status[12]),
+	.I_BLUE(status[13]),
 	.O_FLIP_C(screenflipped),
 
 	.dn_addr(ioctl_addr[15:0]),

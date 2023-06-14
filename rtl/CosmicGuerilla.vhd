@@ -24,6 +24,7 @@ port
 	I_V_OFFSET : in  std_logic_vector(3 downto 0);
 	I_FLIP     : in  std_logic;
 	I_MONO     : in  std_logic;
+	I_BLUE	  : in  std_logic;
 	O_FLIP_C   : out std_logic;
 	--
 	O_SoundPort : out std_logic_vector(15 downto 0);
@@ -716,6 +717,7 @@ port map (
 	I_BITMAP  => v_bitmap_data,
 	I_COL     => v_colour_page,
 	I_BW      => I_MONO,
+	I_BLUE	 => I_BLUE,
 	O_VADDR   => vid_addr,
 	--
 	dn_addr   => dn_addr,

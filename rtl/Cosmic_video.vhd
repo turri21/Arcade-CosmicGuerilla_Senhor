@@ -19,6 +19,7 @@ port (
 	I_H_FLIP				: in    std_logic;	
 	I_S_FLIP				: in    std_logic;
 	I_BW   				: in    std_logic;
+	I_BLUE            : in    std_logic;
 	O_VADDR   			: out   std_logic_vector(12 downto 0);
 	--
 	dn_addr           : in    std_logic_vector(15 downto 0);
@@ -142,10 +143,17 @@ begin
 					O_RED   <= charcolour(0) & charcolour(3) & charcolour(0) & charcolour(3);
 				end if;
 			else
-				-- No background, so black
-				O_BLUE  <= "0000";
-				O_GREEN <= "0000";
-				O_RED   <= "0000";
+				if I_BW='1' then
+					-- Black and White only
+					O_BLUE  <= "0000";
+					O_GREEN <= "0000";
+					O_RED   <= "0000";
+				else
+					-- Optional blue background
+					O_BLUE  <= "00" & I_BLUE & I_BLUE;
+					O_GREEN <= "0000";
+					O_RED   <= "0000";
+				end if;
 			 end if;			 
 		else
 			O_BLUE  <= "0000";
