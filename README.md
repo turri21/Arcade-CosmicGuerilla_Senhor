@@ -1,3 +1,7 @@
+-=(CosmicGuerilla_Senhor notes)=-
+
+Tested: Working Video 720p, 1080p & Sound
+
 # [Arcade: Universal Cosmic Guerilla](https://www.arcade-museum.com/game_detail.php?game_id=7402) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)
 
 By [Mike Coates](https://github.com/macrofpga)  
